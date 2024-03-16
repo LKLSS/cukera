@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.fathercont {
+    margin-top: 35px;
+}
+img {
+    width: 320px;
+    height: 400px;
+    margin: 30px;
+}
+.imgcont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.judged {
+    text-align: center;
+}
+.hotter {
+    text-align: center;
+    margin: 20px;
+}
+.header {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+width: 100%;
+height: 80px;
+background-color: rgb(82, 25, 25);
+color: white !important;
+}
