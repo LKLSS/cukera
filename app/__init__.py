@@ -2,12 +2,13 @@ from flask import Flask
 
 from app.config import Config
 from app.extensions import db
-from app.views import static_blueprint
+from app.views import static_blueprint, home_blueprint
 from app.commands import init_db
 
 
 BLUEPRINTS = [
     static_blueprint,
+    home_blueprint
 ]
 
 COMMANDS = [
@@ -15,7 +16,7 @@ COMMANDS = [
 ]
 
 def create_app():
-    app = Flask(__name__, template_folder='frontend', static_folder='static')
+    app = Flask(__name__, template_folder='templates', static_folder='static')
     app.config.from_object(Config)
 
     register_extension(app)
