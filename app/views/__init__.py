@@ -1,0 +1,1 @@
+from app.views.static.routes import static_blueprint
