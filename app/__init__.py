@@ -2,13 +2,14 @@ from flask import Flask
 
 from app.config import Config
 from app.extensions import db
-from app.views import static_blueprint, home_blueprint
+from app.views import static_blueprint, home_blueprint, submit_blueprint
 from app.commands import init_db
 
 
 BLUEPRINTS = [
     static_blueprint,
-    home_blueprint
+    home_blueprint,
+    submit_blueprint
 ]
 
 COMMANDS = [
